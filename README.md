@@ -21,3 +21,27 @@ AI-Agent学习/
 ├── progress.md
 ├── direction-check.md
 └── interview-qa.md
+
+
+
+# ========== 代码质量检查 ==========
+
+# 1. 安装依赖
+pip install -r requirements.txt
+
+# 2. 运行测试 + 覆盖率（要求 Cover ≥ 80%）
+pytest --cov=src --cov-report=term-missing tests/ -v
+
+# 3. 代码规范检查（要求 All checks passed）
+ruff check src/
+# 自动修复：
+ruff check --fix src/
+ruff check --fix --unsafe-fixes src/
+
+# 4. 类型检查（要求 Success: no issues found）
+mypy src/
+
+# ========== 一键运行全部 ==========
+pytest --cov=src --cov-report=term-missing tests/ -v && \
+ruff check src/ && \
+mypy src/
