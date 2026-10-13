@@ -1,6 +1,36 @@
+# 环境变量
 .env
+
+# 虚拟环境
 venv/
+
+# Python 缓存
 __pycache__/
 *.pyc
+
+# 日志
 logs/*.log
-data/score_result.json
+
+# 覆盖率报告
+.coverage
+htmlcov/
+.pytest_cache/
+
+# 临时输出
+result.json
+data.json
+data/github_repo.json
+data/post_resp.json
+data/weather.json
+data/weather_multi.json
+data/test.txt
+
+# 根目录临时文件
+test.py
+test_mock_demo.py
+test_utils_demo.py
+day1_selfcheck.py
+
+# IDE
+.vscode/
+.idea/
