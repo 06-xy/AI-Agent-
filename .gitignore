@@ -31,6 +31,23 @@ test_mock_demo.py
 test_utils_demo.py
 day1_selfcheck.py
 
+# 旧练习文件
+src/generator_demo.py
+src/json_transform_v2.py
+src/pydantic_demo.py
+src/sdk_demo.py
+src/with_demo.py
+src/yield_demo.py
+src/error_practice.py
+src/pdb_demo.py
+src/post_demo.py
+src/get_weather.py
+src/weather_func.py
+src/weather_multi.py
+tests/test_first.py
+tests/test_understanding.py
+tests/test_utils.py
+
 # IDE
 .vscode/
 .idea/
